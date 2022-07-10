@@ -1,13 +1,17 @@
 html {
+  width: 100%;
   height: 100%;
 }
+
 body {
   margin: 0;
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  background: #f6f5ff;
+  background-color: rgb(227, 217, 217);
+  /* background: linear-gradient (yellow red); */
 }
+
 #content {
   flex: 1;
   display: flex;
@@ -38,6 +42,8 @@ p {
   text-align: right;
   font-size: x-large;
   margin: 0;
+  padding: 10px;
+  font-size: 1cm;
 }
 
 #MOTTO span {
@@ -81,15 +87,45 @@ h1 {
 }
 
 .page {
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 0.5rem;
-  box-shadow: 0 4px rgb(220, 32, 32);
+  box-shadow: 0 0 10px rgb(149, 13, 13);
   padding: 1.6rem;
   margin-bottom: 1.6rem;
+  background: linear-gradient(rgb(135, 127, 228), rgb(227, 217, 217));
 }
 .page h2 {
   margin-top: 0;
 }
+.page table {
+  width: 75%;
+  height: 75%;
+  font-size: 20px;
+  text-align: center;
+}
+.page li {
+  color: black;
+  text-shadow: 3px 3px 5px rgba(84, 49, 156, 0.5);
+}
+.page h2 {
+  color: black;
+  text-shadow: 5px 5px 10px rgba(162, 62, 62, 0.5);
+}
 #titlu {
   margin: 5px;
+}
+#avatar img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  margin: 10px;
+  padding: 10px;
+  object-fit: cover;
+}
+.page1 {
+  padding: 10px;
+}
+#header-info h1 {
+  margin-top: 100px;
+  font-size: 50px;
 }

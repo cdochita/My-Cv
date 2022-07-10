@@ -15,8 +15,8 @@ age = 41;
 var jobtitle = `<span>tehnician</span> mecanic`;
 var mottoElement = document.getElementById(`MOTTO`);
 
-console.info(mottoElement);
-console.warn(mottoElement.innerHTML);
+// console.info(mottoElement);
+// console.warn(mottoElement.innerHTML);
 
 //mottoElement.innerHTML = mottoElement.innerHTML + "& " + jobtitle;
 //mottoElement.innerHTML += " & " + jobtitle;
