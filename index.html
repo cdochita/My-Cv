@@ -23,17 +23,18 @@
                 <h1>Dochita Catalin</h1>
             
                 <p id="MOTTO">
-                    <span>Tehnician</span> Mecanic
+                    <span>Future</span> Dev
                 </p>
             </div>
       </div>
-        <ul id="top-menu-bar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Languages</a></li>
-
-        </ul>
+        <div class="topmenu">
+            <ul id="top-menu-bar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Languages</a></li>
+            </ul>
+        </div>
 
 
     </header>
@@ -41,9 +42,18 @@
     <section id="content">
         <div id="side-menu">
             <section class="page1">
-                <form action="" method="get">
-                    <input type="email" name="Email" id="user Email">
-                    <button type="submit"> Contact me</button>
+                <h2 class="contactme">Contact Me</h2>
+                <form >
+                    <div>
+                        <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="John">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email"  type="email" label placeholder="someone@somewhere.com" required>
+                    </div>
+                    <button type="submit">Send</button>
+                    <button type="reset">Clear</button>
                 </form>
             </section>
 
