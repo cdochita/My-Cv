@@ -33,9 +33,9 @@ body {
   flex: 1;
 }
 
-p {
+/* p {
   color: darkblue;
-}
+} */
 
 #MOTTO {
   color: rgb(220, 32, 32);
@@ -103,7 +103,8 @@ h1 {
   font-size: 20px;
   text-align: center;
 }
-.page li {
+.page li,
+.page p {
   color: black;
   text-shadow: 3px 3px 5px rgba(84, 49, 156, 0.5);
 }
