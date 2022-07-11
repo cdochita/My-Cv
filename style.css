@@ -2,63 +2,14 @@ html {
   width: 100%;
   height: 100%;
 }
+
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  /* background-color: rgb(227, 217, 217); */
+  background-color: rgb(227, 217, 217);
   /* background: linear-gradient (yellow red); */
-  background: url(images/endless-constellation.svg);
-}
-@keyframes forfun2 {
-}
-@keyframes avatar {
-  0% {
-    transform: none;
-  }
-  25% {
-    transform: scale(1.1);
-  }
-
-  50% {
-    transform: scale(1.15);
-  }
-  75% {
-    transform: scale(1.2);
-  }
-}
-@keyframes forfun {
-  0% {
-    transform: none;
-  }
-  25% {
-    transform: scale(1.5) rotate(45deg);
-  }
-
-  50% {
-    transform: rotate(90deg);
-    background: black;
-  }
-  75% {
-    transform: scale3d(200px);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-h1,
-h2 {
-  color: darkgrey;
-}
-#avatar {
-  perspective: 200px;
-  animation-name: avatar;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
 }
 
 #content {
@@ -102,12 +53,12 @@ p {
 .favorite {
   font-weight: 800;
 
-  /* color: black; */
+  color: black;
 }
 
 #top-menu-bar {
   text-align: center;
-  background-color: #5e5f606f;
+  background-color: #334455;
   color: #fff;
 }
 
@@ -115,9 +66,7 @@ p {
   display: inline;
   margin: 0;
   padding: 0;
-  font-size: 1.5rem;
 }
-
 h1 {
   margin-bottom: 10px;
 }
@@ -129,25 +78,21 @@ h1 {
 }
 
 #top-menu-bar a:visited {
-  color: rgb(0, 0, 0);
-  font-weight: 700;
+  color: aqua;
 }
 
 #top-menu-bar a:hover {
-  color: #ffffff;
-  background-color: rgb(0, 0, 0);
+  color: #334455;
+  background-color: #fff;
 }
 
 .page {
   /* background-color: #fff; */
-  color: lightgrey;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgb(149, 13, 13);
   padding: 1.6rem;
   margin-bottom: 1.6rem;
-  background: linear-gradient(rgb(0, 0, 0), rgb(227, 217, 217));
-  animation-name: forfun;
-  animation-duration: 4s;
+  background: linear-gradient(rgb(135, 127, 228), rgb(227, 217, 217));
 }
 .page h2 {
   margin-top: 0;
@@ -159,11 +104,11 @@ h1 {
   text-align: center;
 }
 .page li {
-  /* color: black; */
+  color: black;
   text-shadow: 3px 3px 5px rgba(84, 49, 156, 0.5);
 }
 .page h2 {
-  /* color: black; */
+  color: black;
   text-shadow: 5px 5px 10px rgba(162, 62, 62, 0.5);
 }
 #titlu {
@@ -178,39 +123,7 @@ h1 {
   object-fit: cover;
 }
 .page1 {
-  display: inline;
   padding: 10px;
-  margin: 2rem;
-}
-.page1 form .page1 label .page1 input {
-  padding: 1rem;
-  box-shadow: 0, 0, 0, 3rem rega (red 0.25);
-  margin: 10rem, 5rem;
-}
-.page1 input {
-  border: 1px solid dodgerblue;
-  margin: 1rem 0.5rem;
-  border-radius: 5rem;
-  outline: 0;
-  box-shadow: 0 0 0 4px rgba(84, 49, 156, 0.5);
-}
-.page1 input:hover {
-  border: 1px solid red;
-  box-shadow: 0 0 0 4px rgba(231, 14, 14, 0.5);
-  transition: 0.75s;
-}
-.page1 label {
-  color: darkgrey;
-  border: 1px 1px red;
-}
-.page1 button {
-  color: blue;
-  background-color: transparent;
-  border-color: transparent;
-  size: 5rem;
-}
-.page1 button:hover {
-  color: red;
 }
 #header-info h1 {
   margin-top: 100px;
