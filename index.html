@@ -1,116 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catalin Dochita</title>
     <link type="text/css" rel="stylesheet" href="style.css" />
+    <link rel="JavaScrip" href="index.js" />
+  </head>
 
-
-</head>
-
-<body >  
+  <body>
     <header id="header">
-        <div id="headear-wraper">
-            <div id="avatar" >
-         <img  src="me.jpeg"
-                alt="" width="150"; >
-        
-             </div>
-            <div id="header-info">
-                <h1>Dochita Catalin</h1>
-            
-                <p id="MOTTO">
-                    <span>Tehnician</span> Mecanic
-                </p>
-            </div>
+      <div id="headear-wraper">
+        <div id="avatar">
+          <img src="me.jpeg" alt="" width="150" />
+        </div>
+        <div id="header-info">
+          <h1>Dochita Catalin</h1>
+
+          <p id="MOTTO"><span>Tehnician</span> Mecanic</p>
+        </div>
       </div>
-        <ul id="top-menu-bar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Languages</a></li>
-
-        </ul>
-
-
+      <ul id="top-menu-bar">
+        <li><a href="#" onclick="showHomePage()">Home</a></li>
+        <li><a href="#" onclick="showSkillsPage()">Skills</a></li>
+        <li><a href="#" onclick="showProjectsPage()">Projects</a></li>
+        <li><a href="#" onclick="showLanguagesPage()">Languages</a></li>
+      </ul>
     </header>
 
     <section id="content">
-        <div id="side-menu">
-            <section class="page1">
-                <form action="" method="get">
-                    <input type="email" name="Email" id="user Email">
-                    <button type="submit"> Contact me</button>
-                </form>
-            </section>
+      <div id="side-menu">
+        <section class="page1">
+          <form action="" method="get">
+            <input type="email" name="Email" id="user Email" />
+            <button type="submit">Contact me</button>
+          </form>
+        </section>
 
-            <section class="page1"> Second Menu
-       
-            </section>
+        <section class="page1">Second Menu</section>
+      </div>
+
+      <div id="main">
+        <div id="home" class="page">
+          <h2>Home</h2>
+          <p>About me...</p>
         </div>
 
-
-        <div id="main">
-            <div class="page">
-                <h2>Home</h2>
-                <p>About me...</p>
-                
-            </div>
-
-            <div class="page">
-                <h2>Skills</h2>
-                <ul>
-
-                    <li class="favorite">Html</li>
-                    <li class="favorite">Css</li>
-                    <li class="favorite">Java Script</li>
-                </ul>
-            </div>
-            <div class="page">
-                <h2>Projects</h2>
-                <ul>
-                    <li>Learning HTML</li>
-                    <li>Learning CSS</li>
-                    <li>Learning JavaScrip</li>
-                </ul>
-            </div>
-            <div class="page">    
-                <h2>Known Langueges</h2>
-                <table border="1">
-                   <th>Languages</th>
-                   <th>Level</th>
-                    
-                <tr> 
-                    <td>Romanian</td>
-                    <td>Native</td>
-                </tr>
-                <tr>
-                    <td> English</td> 
-                    <td weight: 800;>Good</td>
-                    </tr>
-
-                </table>
-            </div>
-           
-            
+        <div id="skills" class="page">
+          <h2>Skills</h2>
+          <ul>
+            <li class="favorite">Html</li>
+            <li class="favorite">Css</li>
+            <li class="favorite">Java Script</li>
+          </ul>
         </div>
+        <div id="projects" class="page">
+          <h2>Projects</h2>
+          <ul>
+            <li>Learning HTML</li>
+            <li>Learning CSS</li>
+            <li>Learning JavaScrip</li>
+          </ul>
+        </div>
+        <div id="languages" class="page">
+          <h2>Known Languages</h2>
+          <table border="1">
+            <th>Languages</th>
+            <th>Level</th>
 
+            <tr>
+              <td>Romanian</td>
+              <td>Native</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>Good</td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <p style="text-align: center;color: rgb(201, 18, 18);">
+      <p style="text-align: center; color: rgb(201, 18, 18)">
+        <a href="http://fasttrackit.org">IT</a>
 
-
-            <a href="http://fasttrackit.org">IT</a>
-
-            2022
-        </p>
+        2022
+      </p>
     </footer>
-    
-    <script src="index.js"></script>
-</body>
 
+    <script src="index.js"></script>
+  </body>
 </html>
