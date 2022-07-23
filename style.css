@@ -18,6 +18,21 @@ body {
   flex-direction: row;
   margin: 10px;
 }
+@keyframes fun {
+  0% {
+    transform: scale(0.1);
+  }
+  25% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+
+  100% {
+    tansform: scale(1);
+  }
+}
 #side-menu {
   flex: 1;
 }
@@ -84,11 +99,15 @@ h1 {
 #top-menu-bar a:hover {
   color: #334455;
   background-color: #fff;
+  border-radius: 0.5rem;
 }
 
 .page {
+  perspective: 100px;
+  animation-name: fun;
+  animation-duration: 0.2s;
+
   display: none;
-  /* background-color: #fff; */
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgb(149, 13, 13);
   padding: 1.6rem;
@@ -130,4 +149,8 @@ h1 {
 #header-info h1 {
   margin-top: 100px;
   font-size: 50px;
+}
+
+#footer {
+  display: block;
 }
