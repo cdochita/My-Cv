@@ -20,40 +20,38 @@ var mottoElement = document.getElementById(`MOTTO`);
 
 // mottoElement.innerHTML = mottoElement.innerHTML + "& " + jobtitle;
 
-function hidePage(id) {
+function hide(id) {
   console.info("hide", id);
   document.getElementById(id).style.display = "none";
 }
-function showPage(id) {
+function show(id) {
   console.warn("show", id);
   document.getElementById(id).style.display = "block";
 }
+function hideAllPages() {
+  hide("skills");
+  hide("projects");
+  hide("languages");
+  hide("home");
+}
 
 function showHomePage() {
-  hidePage("skills");
-  hidePage("projects");
-  hidePage("languages");
-  showPage("home");
+  hideAllPages();
+  show("home");
 }
 
 function showSkillsPage() {
-  hidePage("home");
-  hidePage("projects");
-  hidePage("languages");
-  showPage("skills");
+  hideAllPages();
+  show("skills");
 }
 function showProjectsPage() {
-  hidePage("home");
-  hidePage("skills");
-  hidePage("languages");
-  showPage("projects");
+  hideAllPages();
+  show("projects");
 }
 
 function showLanguagesPage() {
-  hidePage("home");
-  hidePage("skills");
-  hidePage("projects");
-  showPage("languages");
+  hideAllPages();
+  show("languages");
 }
 
 showHomePage();

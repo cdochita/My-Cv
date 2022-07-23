@@ -64,7 +64,14 @@ body {
 #MOTTO span {
   font-weight: 800;
 }
-
+#MOTTO a {
+  text-decoration: none;
+  color: rgb(220, 32, 32);
+  font-style: normal;
+}
+#MOTTO a:hover {
+  color: rgb(29, 24, 182);
+}
 .favorite {
   font-weight: 800;
 
