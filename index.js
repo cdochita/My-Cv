@@ -21,11 +21,9 @@ var mottoElement = document.getElementById(`MOTTO`);
 // mottoElement.innerHTML = mottoElement.innerHTML + "& " + jobtitle;
 
 function hide(id) {
-  console.info("hide", id);
   document.getElementById(id).style.display = "none";
 }
 function show(id) {
-  console.warn("show", id);
   document.getElementById(id).style.display = "block";
 }
 function hideAllPages() {
@@ -34,10 +32,12 @@ function hideAllPages() {
   hide("languages");
   hide("home");
 }
-
+var activePage = "home";
 function showPage(id) {
-  console.warn("pls show me this page", id);
   hideAllPages();
   show(id);
+  document.getElementById("menu-" + activePage).classList.remove("active");
+  document.getElementById("menu-" + id).classList.add("active");
+  activePage = id;
 }
-showPage("home");
+showPage(activePage);

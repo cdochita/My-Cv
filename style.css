@@ -108,7 +108,11 @@ h1 {
   background-color: #fff;
   border-radius: 0.5rem;
 }
-
+#top-menu-bar a.active {
+  color: darkblue;
+  background-color: rgb(154, 147, 147);
+  border-radius: 0.5rem;
+}
 .page {
   perspective: 100px;
   animation-name: fun;
