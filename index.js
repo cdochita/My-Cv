@@ -27,7 +27,7 @@ function show(id) {
   document.getElementById(id).style.display = "block";
 }
 
-var activePage = "home";
+var activePage = "skills";
 function showPage(id) {
   hide(activePage);
   show(id);
@@ -35,4 +35,18 @@ function showPage(id) {
   document.getElementById("menu-" + id).classList.add("active");
   activePage = id;
 }
+
+function initEvents() {
+  document
+    .getElementById("top-menu-bar")
+    .addEventListener("click", function (e) {
+      if (e.target.matches("a")) {
+        var id = e.target.id.substring(5);
+        console.warn("click pe meniu", id);
+        showPage(id);
+      }
+    });
+}
+
 showPage(activePage);
+initEvents();
