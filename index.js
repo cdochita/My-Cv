@@ -26,15 +26,10 @@ function hide(id) {
 function show(id) {
   document.getElementById(id).style.display = "block";
 }
-function hideAllPages() {
-  hide("skills");
-  hide("projects");
-  hide("languages");
-  hide("home");
-}
+
 var activePage = "home";
 function showPage(id) {
-  hideAllPages();
+  hide(activePage);
   show(id);
   document.getElementById("menu-" + activePage).classList.remove("active");
   document.getElementById("menu-" + id).classList.add("active");
