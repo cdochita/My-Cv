@@ -15,7 +15,6 @@ age = 41;
 var jobtitle = `<span>tehnician</span> mecanic`;
 var mottoElement = document.getElementById(`MOTTO`);
 
-// console.info(mottoElement);
 // console.warn(mottoElement.innerHTML);
 
 // mottoElement.innerHTML = mottoElement.innerHTML + "& " + jobtitle;
@@ -54,13 +53,8 @@ function initEvents() {
 showPage(activePage);
 initEvents();
 
-function displaySkills() {
+function displaySkills(skills) {
   console.info("display skills");
-  var skills = [
-    { name: "HTML", endorcements: 15, favorite: true },
-    { name: "CSS", endorcements: 20, favorite: false },
-    { name: "JavaScript", endorcements: 10, favorite: true },
-  ];
   skills.sort(function (a, b) {
     return b.endorcements - a.endorcements;
     // if (a.name.toLowerCase() < b.name.toLowerCase()) {
@@ -78,4 +72,16 @@ function displaySkills() {
     ul.innerHTML += `<li>${skills[i].name} - ${skills[i].endorcements} </li>`;
   }
 }
-displaySkills();
+
+function loadSkills() {
+  fetch("skills.json")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (skills) {
+      console.warn("am primit ceva ori nu?", skills);
+      displaySkills(skills);
+    });
+}
+
+loadSkills();
