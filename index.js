@@ -56,17 +56,16 @@ initEvents();
 
 function displaySkills() {
   console.info("display skills");
-  // initializare ; conditie; post exec
-  for (var i = 1; i < 3; i++) {
-    console.info(`${i} * 5 = ${i * 5}`);
-  }
-
-  var skills = ["HTML", "CSS", "JavaScript", "rubik"];
-
+  var skills = [
+    { name: "HTML", endorcements: 10 },
+    { name: "CSS", endorcements: 15 },
+    { name: "JavaScript", endorcements: 20 },
+  ];
+  console.info(skills);
   var ul = document.querySelector("#skills ul");
   console.info(ul);
   for (var i = 0; i < skills.length; i++) {
-    ul.innerHTML += `<li>${skills[i]}</li>`;
+    ul.innerHTML += `<li>${skills[i].name} - ${skills[i].endorcements} </li>`;
   }
 }
 displaySkills();
