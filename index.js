@@ -57,10 +57,20 @@ initEvents();
 function displaySkills() {
   console.info("display skills");
   var skills = [
-    { name: "HTML", endorcements: 10 },
-    { name: "CSS", endorcements: 15 },
-    { name: "JavaScript", endorcements: 20 },
+    { name: "HTML", endorcements: 15, favorite: true },
+    { name: "CSS", endorcements: 20, favorite: false },
+    { name: "JavaScript", endorcements: 10, favorite: true },
   ];
+  skills.sort(function (a, b) {
+    return b.endorcements - a.endorcements;
+    // if (a.name.toLowerCase() < b.name.toLowerCase()) {
+    //   return -1;
+    // }
+    // if (a.name.toLowerCase() > b.name.toLowerCase()) {
+    //   return 1;
+    // }
+    // return 0;
+  });
   console.info(skills);
   var ul = document.querySelector("#skills ul");
   console.info(ul);
