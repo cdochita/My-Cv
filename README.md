@@ -1,7 +1,7 @@
 # My personal CV
 
-This is my CV created with HTML and CSS
+This is my CV created with HTML and CSS.
 
 ## Live
 
-[cdochita.github.io] https://cdochita.github.io/My-Cv/#
+ https://cdochita.github.io/My-Cv/#
